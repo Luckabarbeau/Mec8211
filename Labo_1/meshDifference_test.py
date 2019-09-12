@@ -2,10 +2,9 @@ from meshDifference import meshDifference
 import numpy as np
 
 
-a = np.array([[4, 5],
-              [6, 7]])
-b = np.array([2])
-expectedOutput = 14
+a = np.ones((8, 4))
+b = np.zeros((4, 2))
+expectedOutput = 32
 
 functionOutput = meshDifference(b, a)
 
