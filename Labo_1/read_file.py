@@ -29,4 +29,6 @@ def read_file(filename):
                 k = k + 1
         i = i + 1
 
+    A = A.transpose()
+
     return A
