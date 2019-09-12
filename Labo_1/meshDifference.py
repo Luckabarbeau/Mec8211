@@ -19,8 +19,6 @@ def meshDifference(coarseMesh, fineMesh):
 
             errorMatrix[row, col] = fineMeshSum - coarseMesh[row, col]
 
-    errorMatrixSum = 0
-    for error in errorMatrix:
-        errorMatrixSum += error
+    errorMatrixSum = np.sum(errorMatrix)
 
     return errorMatrixSum
