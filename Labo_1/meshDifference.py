@@ -8,7 +8,12 @@ import numpy as np
 def meshDifference(coarseMesh, fineMesh):
     errorMatrix = np.zeros(coarseMesh.shape)
     numRows = errorMatrix.shape[0]
-    numCols = errorMatrix.shape[1]
+
+    if coarseMesh.size == 1:
+        numCols = 1
+    else:
+        numCols = errorMatrix.shape[1]
+
     for row in range(numRows):
         for col in range(numCols):
             fineMeshRows = (2 * row, 2 * row + 1)
