@@ -19,4 +19,5 @@ def plot_error(error , nb_cell):
     plt.title(('log log curve of error in function of the cell size , Slop =',str(a)))
     plt.plot(log_nb, log_e, 'bo')
     plt.plot(X_1, Y_1,)
+    print(('the slope of the error curve is ', str(a)))
     return a , b
