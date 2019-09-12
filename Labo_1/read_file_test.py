@@ -6,6 +6,10 @@ expectedOutput = np.array([[79.95840, 78.85821, 73.52985, 51.07365],
 
 functionOutput = read_file("p242_T_directe_4x2.txt")
 
+if np.array_equal(expectedOutput, functionOutput):
+    print('Test passed')
 
+else:
+    print('Test failed. Array was not properly created from input file')
 
 
