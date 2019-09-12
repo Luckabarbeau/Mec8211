@@ -1,3 +1,4 @@
+## made by Lucka Barbeau 1748294 and Matthew Coffey 1642072
 # This function calculates the difference between two meshes.
 # The difference is calculated by subtracting the the value of the coarser mesh
 # from the sum of the values of the finer mesh covered by each element of the coarser

@@ -1,3 +1,4 @@
+## made by Lucka Barbeau 1748294 and Matthew Coffey 1642072
 import numpy as np
 
 

@@ -1,3 +1,4 @@
+## made by Lucka Barbeau 1748294 and Matthew Coffey 1642072
 from read_file import read_file
 import numpy as np
 
