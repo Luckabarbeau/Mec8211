@@ -4,5 +4,10 @@
 # mesh.
 import numpy as np
 
-def mesh_difference(mesh_c,mesh_f):
-    
+def mesh_difference(coarseMesh, fineMesh):
+    errorMatrix = np.zeros(coarseMesh.shape)
+    numRows = errorMatrix.shape[0]
+    numCols = errorMatrix.shape[1]
+    for row in range(numRows):
+        for col in range(numCols):
+            errorMatrix[row,col] = fineMesh[]
