@@ -15,7 +15,7 @@ def meshDifference(coarseMesh, fineMesh):
             fineMeshDiff = 0
             for fineMeshRow in fineMeshRows:
                 for fineMeshCol in fineMeshCols:
-                    fineMeshDiff += fineMesh[fineMeshRow, fineMeshCol] - coarseMesh[row, col]
+                    fineMeshDiff += ((fineMesh[fineMeshRow, fineMeshCol] - coarseMesh[row, col])**2)**0.5
 
             errorMatrix[row, col] = fineMeshDiff
 
