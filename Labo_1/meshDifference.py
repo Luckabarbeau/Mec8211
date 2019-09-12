@@ -12,12 +12,12 @@ def meshDifference(coarseMesh, fineMesh):
         for col in range(numCols):
             fineMeshRows = (2 * row, 2 * row + 1)
             fineMeshCols = (2 * col, 2 * col + 1)
-            fineMeshSum = 0
+            fineMeshDiff = 0
             for fineMeshRow in fineMeshRows:
                 for fineMeshCol in fineMeshCols:
-                    fineMeshSum += fineMesh[fineMeshRow, fineMeshCol]
+                    fineMeshDiff += fineMesh[fineMeshRow, fineMeshCol] - coarseMesh[row, col]
 
-            errorMatrix[row, col] = fineMeshSum - coarseMesh[row, col]
+            errorMatrix[row, col] = fineMeshDiff
 
     errorMatrixSum = np.sum(errorMatrix)
 
